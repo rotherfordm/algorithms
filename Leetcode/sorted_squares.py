@@ -30,5 +30,5 @@ def sortedSquares2(nums):
     return sortedSqres
 
 
-print(sortedSquares1([-4,-1,0,3,10]))
+# print(sortedSquares1([-4,-1,0,3,10]))
 print(sortedSquares2([-4,-1,0,3,10]))
