@@ -32,6 +32,5 @@ def productExceptSelf2(nums):
     return res
 
 
-# print(productExceptSelf([1,2,3,4]))
-print(productExceptSelf2([-1,1,0,-3,3]))
+print(productExceptSelf2([1,2,3,4]))
 print(productExceptSelf2([-1,1,0,-3,3]))
