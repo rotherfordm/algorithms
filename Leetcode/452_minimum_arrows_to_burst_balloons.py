@@ -53,12 +53,12 @@ def findMinArrowShots(points):
     total_arrows = len(points)
     prev = points[0]
     for i in range(1, len(points)):
-        curr = points[i]
-        if curr[0] <= prev[1]:
+        current = points[i]
+        if current[0] <= prev[1]:
             total_arrows -= 1
-            prev = [curr[0], min(curr[1], prev[1])]
+            prev = [current[0], min(current[1], prev[1])]
         else:
-            prev = curr
+            prev = current
     return total_arrows
 
 
