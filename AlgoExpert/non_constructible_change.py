@@ -9,3 +9,5 @@ def nonConstructibleChange(coins):
         currentChangeCreated += coin
 
     return currentChangeCreated + 1
+
+print(nonConstructibleChange([1,2,5]))

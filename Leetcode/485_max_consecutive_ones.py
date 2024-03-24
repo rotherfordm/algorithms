@@ -20,23 +20,17 @@ Constraints:
 1 <= nums.length <= 105
 nums[i] is either 0 or 1.
 """
-
-
 def findMaxConsecutiveOnes(nums):
     max_ones = 0
     counter = 0
-
     for num in nums:
         if num == 1:
             counter += 1
 
             if counter > max_ones:
                 max_ones = counter
-
         else:
             counter = 0
-
     return max_ones
-
 
 assert findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]) == 3
