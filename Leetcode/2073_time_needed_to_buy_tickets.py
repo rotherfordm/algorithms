@@ -20,4 +20,31 @@ def timeRequiredToBuy(tickets, k):
 
     return count
 
+def timeRequiredToBuy2(tickets, k) -> int:
+    total = 0
+    for elem in tickets[:k + 1]:
+        total += elem if elem <= tickets[k] else tickets[k]
+
+    for elem in tickets[k + 1:]:
+        total += elem if elem < tickets[k] else tickets[k] - 1
+
+    return total
+
+def timeRequiredToBuy3(tickets, k) -> int:
+    total = 0
+    for elem in tickets[:k + 1]:
+        if elem <= tickets[k]:
+            total += elem
+        else:
+            total += tickets[k]
+
+    for elem in tickets[k + 1:]:
+        if elem < tickets[k]:
+            total += elem
+        else:
+            total += tickets[k] - 1
+    return total
+
 assert timeRequiredToBuy([2,3,2], 2) == 6
+assert timeRequiredToBuy2([2,3,2], 2) == 6
+assert timeRequiredToBuy3([2,3,2], 2) == 6
