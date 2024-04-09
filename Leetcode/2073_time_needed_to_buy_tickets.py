@@ -48,3 +48,5 @@ def timeRequiredToBuy3(tickets, k) -> int:
 assert timeRequiredToBuy([2,3,2], 2) == 6
 assert timeRequiredToBuy2([2,3,2], 2) == 6
 assert timeRequiredToBuy3([2,3,2], 2) == 6
+
+print(timeRequiredToBuy3([5,1,1,1], 1))
